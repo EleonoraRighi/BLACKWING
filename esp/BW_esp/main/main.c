@@ -35,10 +35,10 @@ float emotion[8]={0.1,0.1,0.1,0.1,0.1,0.0, 0.0, 0.0};  // Anger, Disgust, Fear, 
 
 int emotion_th[8]={0,0,0,0,0,0,0,0};
 
-int i=0; //per i cicli for e altro
+int i=0; //for cycles and more
 
 
-//Funzione per mandare messaggi al jetson
+//Function to send messages to UART
 void uart_send_msg(const char *msg) {
         char buffer[128];
         snprintf(buffer, sizeof(buffer), "[ESP] %s\n", msg);
